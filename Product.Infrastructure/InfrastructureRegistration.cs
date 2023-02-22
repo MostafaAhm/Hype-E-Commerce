@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -31,6 +32,7 @@ namespace Product.Infrastructure
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<ITokenService, TokenService>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             services.Configure<JWT>(c => configuration.GetSection("JWT"));
 

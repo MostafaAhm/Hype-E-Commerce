@@ -1,5 +1,6 @@
 using Microsoft.OpenApi.Models;
 using Product.API.Extensions;
+using Product.API.Helper.Middlewares;
 using Product.Application;
 using Product.Infrastructure;
 using Product.Infrastructure.Persistence;
@@ -41,6 +42,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 app.MigrateDatabaseAsync<AppContextSeed>().Wait();
-//app.UseMiddleware<RequestResponseLoggingMiddleware>();
+app.UseMiddleware<RequestResponseLoggingMiddleware>();
 
 app.Run();

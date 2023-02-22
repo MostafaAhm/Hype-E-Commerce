@@ -43,7 +43,9 @@ namespace Product.Infrastructure.Services
             {
                 new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
                 new Claim(JwtRegisteredClaimNames.Jti, user.Id),
-                new Claim(JwtRegisteredClaimNames.Email, user.Email)
+                new Claim(JwtRegisteredClaimNames.Email, user.Email),
+                new Claim("username", user.UserName),
+
             }
             .Union(userClaims)
             .Union(roleClaims);

@@ -1,19 +1,19 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Product.Domain.Common;
 using Product.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace Product.Infrastructure.Persistence
 {
     public class AppDbContext : IdentityDbContext<ApplicationUser>
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        private readonly IHttpContextAccessor _httpContextAccessor;
+
+        public AppDbContext(DbContextOptions<AppDbContext> options, IHttpContextAccessor httpContextAccessor) : base(options)
         {
+            _httpContextAccessor = httpContextAccessor;
         }
         public DbSet<Products> Products { get; set; }
         public DbSet<ProductType> ProductTypes { get; set; }
@@ -22,6 +22,7 @@ namespace Product.Infrastructure.Persistence
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
+            var userName = _httpContextAccessor?.HttpContext?.User.Claims.SingleOrDefault(s => s.Type == "username")?.Value;
             foreach (var entry in ChangeTracker.Entries<EntityBase>())
             {
                 switch (entry.State)
@@ -29,10 +30,10 @@ namespace Product.Infrastructure.Persistence
                     case EntityState.Added:
                         entry.Entity.Id = Guid.NewGuid();
                         entry.Entity.CreatedDate = DateTime.Now;
-                        entry.Entity.CreatedBy = "Mostafa";
+                        entry.Entity.CreatedBy = userName;
                         break;
                     case EntityState.Modified:
-                        entry.Entity.UpdatedBy = "mostafa2";
+                        entry.Entity.UpdatedBy = userName;
                         entry.Entity.UpdatedDate = DateTime.Now;
                         break;
                 }

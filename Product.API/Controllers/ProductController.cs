@@ -29,7 +29,7 @@ namespace Product.API.Controllers
         }
 
         [Authorize(Roles = Roles.Admin + "," + Roles.User)]
-        //[Cache(700)]
+        [Cache(700)]
         [HttpPost(ApiRoute.Product.GetProduct)]
         public IActionResult GetProducts([FromBody] GetProductsRequestDto dto)
         {
