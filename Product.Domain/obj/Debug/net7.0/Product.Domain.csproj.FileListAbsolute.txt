@@ -1,0 +1,12 @@
+E:\Problem Solving\HypexMarketing-Test\Product.Domain\bin\Debug\net7.0\Product.Domain.deps.json
+E:\Problem Solving\HypexMarketing-Test\Product.Domain\bin\Debug\net7.0\Product.Domain.dll
+E:\Problem Solving\HypexMarketing-Test\Product.Domain\bin\Debug\net7.0\Product.Domain.pdb
+E:\Problem Solving\HypexMarketing-Test\Product.Domain\obj\Debug\net7.0\Product.Domain.csproj.AssemblyReference.cache
+E:\Problem Solving\HypexMarketing-Test\Product.Domain\obj\Debug\net7.0\Product.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Problem Solving\HypexMarketing-Test\Product.Domain\obj\Debug\net7.0\Product.Domain.AssemblyInfoInputs.cache
+E:\Problem Solving\HypexMarketing-Test\Product.Domain\obj\Debug\net7.0\Product.Domain.AssemblyInfo.cs
+E:\Problem Solving\HypexMarketing-Test\Product.Domain\obj\Debug\net7.0\Product.Domain.csproj.CoreCompileInputs.cache
+E:\Problem Solving\HypexMarketing-Test\Product.Domain\obj\Debug\net7.0\Product.Domain.dll
+E:\Problem Solving\HypexMarketing-Test\Product.Domain\obj\Debug\net7.0\refint\Product.Domain.dll
+E:\Problem Solving\HypexMarketing-Test\Product.Domain\obj\Debug\net7.0\Product.Domain.pdb
+E:\Problem Solving\HypexMarketing-Test\Product.Domain\obj\Debug\net7.0\ref\Product.Domain.dll

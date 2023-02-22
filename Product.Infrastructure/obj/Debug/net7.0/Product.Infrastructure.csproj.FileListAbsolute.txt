@@ -1,0 +1,17 @@
+E:\Problem Solving\HypexMarketing-Test\Product.Infrastructure\bin\Debug\net7.0\Product.Infrastructure.deps.json
+E:\Problem Solving\HypexMarketing-Test\Product.Infrastructure\bin\Debug\net7.0\Product.Infrastructure.dll
+E:\Problem Solving\HypexMarketing-Test\Product.Infrastructure\bin\Debug\net7.0\Product.Infrastructure.pdb
+E:\Problem Solving\HypexMarketing-Test\Product.Infrastructure\bin\Debug\net7.0\Product.Application.dll
+E:\Problem Solving\HypexMarketing-Test\Product.Infrastructure\bin\Debug\net7.0\Product.Domain.dll
+E:\Problem Solving\HypexMarketing-Test\Product.Infrastructure\bin\Debug\net7.0\Product.Application.pdb
+E:\Problem Solving\HypexMarketing-Test\Product.Infrastructure\bin\Debug\net7.0\Product.Domain.pdb
+E:\Problem Solving\HypexMarketing-Test\Product.Infrastructure\obj\Debug\net7.0\Product.Infrastructure.csproj.AssemblyReference.cache
+E:\Problem Solving\HypexMarketing-Test\Product.Infrastructure\obj\Debug\net7.0\Product.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Problem Solving\HypexMarketing-Test\Product.Infrastructure\obj\Debug\net7.0\Product.Infrastructure.AssemblyInfoInputs.cache
+E:\Problem Solving\HypexMarketing-Test\Product.Infrastructure\obj\Debug\net7.0\Product.Infrastructure.AssemblyInfo.cs
+E:\Problem Solving\HypexMarketing-Test\Product.Infrastructure\obj\Debug\net7.0\Product.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Problem Solving\HypexMarketing-Test\Product.Infrastructure\obj\Debug\net7.0\Product.Infrastructure.csproj.CopyComplete
+E:\Problem Solving\HypexMarketing-Test\Product.Infrastructure\obj\Debug\net7.0\Product.Infrastructure.dll
+E:\Problem Solving\HypexMarketing-Test\Product.Infrastructure\obj\Debug\net7.0\refint\Product.Infrastructure.dll
+E:\Problem Solving\HypexMarketing-Test\Product.Infrastructure\obj\Debug\net7.0\Product.Infrastructure.pdb
+E:\Problem Solving\HypexMarketing-Test\Product.Infrastructure\obj\Debug\net7.0\ref\Product.Infrastructure.dll
